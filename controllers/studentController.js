@@ -68,13 +68,13 @@ exports.getOneStudent = async(req, res)=>{
                 message:'Student not found'
             })
         }res.status(200).json({
-            message:"student Successfully retrieved",
+            message:"student's Info Successfully retrieved",
             data:student
         })
 
     } catch (error) {
            res.status(500).json({
-            message:"something went wrong",
+            message:"something Just happened wrong",
             error:error.message
         })
     }

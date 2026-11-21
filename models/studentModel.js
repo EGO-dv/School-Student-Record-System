@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-// student data structure 
+// student data structure that will hold my data 
 const studentSchema = mongoose.Schema({
     firstName:{type:String,required:true},
     lastName:{type:String,required:true},
@@ -13,7 +13,6 @@ const studentSchema = mongoose.Schema({
     score:[{type:mongoose.Schema.Types.ObjectId,
         ref:"scoreInfo"
     }]
-
 });
 
 const studentMOdel= mongoose.model("studentInfo",studentSchema);
