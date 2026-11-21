@@ -1,3 +1,5 @@
+const dotenv = require("dotenv")
+dotenv.config()
 const express = require("express")
 const PORT = 2890
 const studentRouter = require("./routers/studentRouter")
