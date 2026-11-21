@@ -7,6 +7,7 @@ const courseRouter = require("./routers/courseRouter")
 const scoreRouter = require("./routers/scoreRouter")
 const app = express()
 require("./db")
+///whats up
 app.use(express.json())
 app.use(studentRouter)
 app.use(courseRouter)
